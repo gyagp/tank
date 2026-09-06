@@ -1,0 +1,6 @@
+{
+  "provider": "Google Gemini API",
+  "model": "gemini-3.1-flash-image",
+  "prompt": "Use case: stylized-concept. Asset type: game level selection card, cinematic wide 16:9. An arctic industrial military base seen at an elevated isometric angle at blue hour, powdery snow, ice blue steel containers, warm amber lights on bunkers, mountain silhouettes, mist. Beautiful realistic miniature 3D diorama, rich detail, atmospheric lighting, tactical tank arena layout. No text, no watermark, no interface.",
+  "generated": "2026-09-06T07:33:53.859Z"
+}

@@ -1,0 +1,9 @@
+{
+  "gpu": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "frames": 218,
+  "fps": 34.1,
+  "frameP50": 16.799999999999272,
+  "frameP95": 66.59999999999854,
+  "averageDrawCalls": 807,
+  "longTasks": 1
+}

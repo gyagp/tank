@@ -1,0 +1,12 @@
+{
+  "gpu": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "renderMode": "webgl",
+  "frames": 348,
+  "renderScale": 1,
+  "fps": 57,
+  "frameP50": 16.699999999999818,
+  "frameP95": 17,
+  "averageDrawCalls": 265,
+  "longTasks": 1,
+  "errors": []
+}

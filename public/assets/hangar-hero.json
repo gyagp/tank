@@ -1,0 +1,6 @@
+{
+  "provider": "Google Gemini API",
+  "model": "gemini-3.1-flash-image",
+  "prompt": "Use case: stylized-concept. Asset type: premium tank video game garage hero background, wide 16:9. A beautiful highly detailed olive green fictional compact battle tank, chunky angular armor, intricate worn metal tracks, long cannon, orange small markings, facing front-left, seen from an elevated three-quarter angle. Tank occupies the center-right 65 percent of the frame and sits on a dusty concrete desert outpost. Warm late-afternoon sun, dramatic atmospheric dust, distant hazy brutalist military structures, cinematic realistic 3D render, finely detailed materials, beautiful ambient occlusion. Left portion mostly soft hazy empty environment, plenty of negative space. Muted sage green, sand, warm charcoal and subtle rust orange palette. Sophisticated AAA indie game key art. No text, no writing, no logos, no watermark. Not an actual historical vehicle.",
+  "generated": "2026-09-06T07:33:30.590Z"
+}

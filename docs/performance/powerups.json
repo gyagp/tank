@@ -1,0 +1,6 @@
+{
+  "fields": 6,
+  "events": ["pickup", "shot", "arc", "hit", "explosion", "strike", "frost"],
+  "calls": 240,
+  "bullets": 7
+}

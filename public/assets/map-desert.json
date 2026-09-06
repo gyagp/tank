@@ -1,0 +1,6 @@
+{
+  "provider": "Google Gemini API",
+  "model": "gemini-3.1-flash-image",
+  "prompt": "Use case: stylized-concept. Asset type: game level selection card, cinematic wide 16:9. An abandoned desert military outpost seen at an elevated isometric angle, low sun, warm orange sand, battered concrete barriers, steel cargo containers, small ruined watchtower, dust in air. Beautiful realistic miniature 3D diorama, rich detail, atmospheric light, tactical tank arena layout. No text, no watermark, no interface.",
+  "generated": "2026-09-06T07:33:42.050Z"
+}

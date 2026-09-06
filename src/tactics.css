@@ -1,0 +1,361 @@
+.mode-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 18px;
+}
+.mode-selector button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  border: 1px solid #cdd4c5;
+  border-radius: 7px;
+  background: #eceee6;
+  text-align: left;
+  color: #4f5946;
+}
+.mode-selector button.selected {
+  background: #fff8eb;
+  border-color: #be6b43;
+  box-shadow: inset 3px 0 #c76d43;
+}
+.mode-selector strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+.mode-selector span {
+  font-size: 14px;
+  color: #727d66;
+}
+.mode-selector small {
+  margin-left: auto;
+  font-size: 13px;
+  padding: 4px 7px;
+  background: #df78351a;
+  color: #b96034;
+  border-radius: 3px;
+}
+.team-tag {
+  padding: 2px 5px;
+  background: #253837;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.objective-hud {
+  position: absolute;
+  top: 113px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 368px;
+  padding: 13px 16px 10px;
+  pointer-events: none;
+  border-radius: 8px;
+  background: #172b2ced;
+  border: 1px solid #a8c4b34d;
+}
+.team-scores {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #a8c4b32b;
+}
+.team-scores > div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 50%;
+}
+.team-scores > div:last-child {
+  flex-direction: row-reverse;
+}
+.team-scores span {
+  font-size: 14px;
+  white-space: nowrap;
+}
+.team-scores strong {
+  font:
+    600 32px/1 'Barlow Condensed',
+    sans-serif;
+}
+.objective-list {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.objective-list > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  flex: 1;
+}
+.objective-list strong {
+  font:
+    600 25px 'Barlow Condensed',
+    sans-serif;
+}
+.objective-list span {
+  font-size: 13px;
+}
+.objective-list i {
+  height: 3px;
+  width: 100%;
+  background: #aec1bc26;
+}
+.objective-list b {
+  display: block;
+  height: 100%;
+}
+.objective-list .contested {
+  color: #ffdf83 !important;
+}
+.objective-hud p {
+  text-align: center;
+  font-size: 12px;
+  color: #bccac0;
+  margin: 10px 0 0;
+}
+.tactical-commands {
+  position: absolute;
+  bottom: 172px;
+  left: 30px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.tactical-commands button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 60px;
+  padding: 10px 12px;
+  color: #d0f3e6;
+  background: #193130ee;
+  border: 1px solid #86bdad7a;
+  border-radius: 6px;
+}
+.tactical-commands button:hover:not(:disabled) {
+  background: #2b5148;
+  border-color: #a4ead0;
+}
+.tactical-commands button:disabled {
+  opacity: 1;
+}
+.tactical-commands button.cooling {
+  color: #8caaa1;
+  border-color: #8caaa13b;
+}
+.tactical-commands strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+}
+.tactical-commands span {
+  display: block;
+  font-size: 12px;
+  margin-top: 3px;
+}
+.tactical-commands kbd {
+  font:
+    600 14px 'Barlow',
+    sans-serif;
+  border: 1px solid #91bfa04d;
+  padding: 3px 6px;
+  border-radius: 3px;
+}
+.recon-active {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  color: #bff3de;
+  background: #193130de;
+  padding: 6px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.control-mode .strike-warning {
+  top: 280px;
+}
+.control-mode .pickup-notice {
+  top: 285px;
+}
+.game-overlay .pause-panel {
+  max-height: calc(100dvh - 36px);
+  overflow-y: auto;
+}
+.game-overlay .score-table b {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 1100px) {
+  .objective-hud {
+    width: 328px;
+    top: 110px;
+  }
+  .control-mode .battle-left {
+    top: 275px;
+  }
+  .control-mode .battle-actions .ping {
+    display: none;
+  }
+}
+@media (max-width: 740px) {
+  .mode-selector button {
+    padding: 12px;
+    gap: 9px;
+  }
+  .mode-selector small {
+    display: none;
+  }
+  .mode-selector strong {
+    font-size: 16px;
+  }
+  .mode-selector span {
+    font-size: 13px;
+  }
+  .tactical-commands {
+    bottom: 246px;
+    left: 20px;
+  }
+}
+@media (max-width: 560px) {
+  .mode-selector {
+    gap: 8px;
+  }
+  .mode-selector button {
+    align-items: flex-start;
+  }
+  .mode-selector button > svg {
+    display: none;
+  }
+  .control-mode .match-clock {
+    top: 60px;
+  }
+  .control-mode .match-clock > span {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .control-mode .match-clock strong {
+    font-size: 30px;
+  }
+  .objective-hud {
+    top: 127px;
+    width: calc(100% - 28px);
+    max-width: 360px;
+    padding: 10px 13px;
+  }
+  .team-scores {
+    padding-bottom: 7px;
+  }
+  .team-scores strong {
+    font-size: 26px;
+  }
+  .objective-list {
+    margin-top: 5px;
+  }
+  .objective-hud p {
+    font-size: 12px;
+    margin-top: 7px;
+  }
+  .control-mode .battle-left,
+  .control-mode .kill-feed {
+    display: none;
+  }
+  .control-mode .pickup-notice {
+    top: 274px;
+    max-width: calc(100% - 28px);
+    white-space: normal;
+    text-align: center;
+    font-size: 15px;
+  }
+  .control-mode .strike-warning {
+    top: 322px;
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+  .tactical-commands {
+    left: 24px;
+    bottom: 284px;
+    gap: 7px;
+  }
+  .tactical-commands button {
+    padding: 6px 8px;
+    min-height: 48px;
+    gap: 5px;
+  }
+  .tactical-commands strong {
+    font-size: 14px;
+  }
+  .tactical-commands span {
+    font-size: 11px;
+  }
+  .tactical-commands button > svg,
+  .tactical-commands kbd {
+    display: none;
+  }
+  .recon-active {
+    bottom: 57px;
+  }
+  .battle-screen .active-effects {
+    max-width: calc(100% - 140px);
+  }
+}
+@media (pointer: coarse) and (min-width: 561px) {
+  .tactical-commands {
+    bottom: 238px;
+    left: 27px;
+  }
+  .tactical-commands button {
+    min-height: 47px;
+    padding: 7px 10px;
+  }
+  .tactical-commands kbd {
+    display: none;
+  }
+}
+@media (max-height: 560px) and (min-width: 561px) {
+  .objective-hud {
+    top: 75px;
+    width: 300px;
+    padding: 7px 12px;
+  }
+  .objective-hud p {
+    display: none;
+  }
+  .team-scores {
+    padding-bottom: 4px;
+  }
+  .team-scores strong {
+    font-size: 23px;
+  }
+  .objective-list {
+    margin-top: 3px;
+  }
+  .control-mode .battle-left {
+    display: none;
+  }
+  .control-mode .pickup-notice,
+  .control-mode .strike-warning {
+    top: 177px;
+  }
+  .tactical-commands {
+    bottom: 112px;
+    left: 145px;
+    gap: 5px;
+  }
+  .tactical-commands button {
+    min-height: 44px;
+    padding: 6px 8px;
+    gap: 6px;
+  }
+  .tactical-commands strong {
+    font-size: 13px;
+  }
+  .tactical-commands button > svg {
+    display: none;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "provider": "Google Gemini API",
+  "model": "gemini-3.1-flash-image",
+  "prompt": "Use case: stylized-concept. Asset type: game level selection card, cinematic wide 16:9. Overgrown abandoned military ruins in a lush green valley seen at an elevated isometric angle, moss covered concrete barriers, weathered stone bunker, pines at edges, sunbeams through light mist. Beautiful realistic miniature 3D diorama, rich detail, atmospheric lighting, tactical tank arena layout. No text, no watermark, no interface.",
+  "generated": "2026-09-06T07:34:05.357Z"
+}

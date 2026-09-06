@@ -1,0 +1,8 @@
+node_modules
+dist
+dist-server
+public/assets
+test-results
+playwright-report
+package-lock.json
+docs/screenshots
